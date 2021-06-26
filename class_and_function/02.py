@@ -14,7 +14,7 @@ print(func(mylist, rt))
 rt = 60
 
 def afun(mylist, rt):
-    mylist = [(mylist[iteam], mylist[value]) for iteam in range(len(mylist)) for value in range(1, len(mylist)) if mylist[iteam] != mylist[value] and mylist[iteam] + mylist[value] == rt]
+    mylist = [(mylist[iteam], mylist[value]) for iteam in range(len(mylist)) for value in range(iteam, len(mylist)) if mylist[iteam] != mylist[value] and mylist[iteam] + mylist[value] == rt]
     return mylist
 
 print(afun(mylist, rt))
