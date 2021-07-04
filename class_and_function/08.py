@@ -8,4 +8,5 @@ name = 'Punit Jain' #  string variable.
 print(f'My name is "{name}".')# f string.
 print('My name is ', name) # just print.
 print('Name is ' +name) # just print.
+print('Name %s' %name)
 print('*' * 100)
