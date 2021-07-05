@@ -11,3 +11,4 @@ print('Name is ' +name) # just print.
 print('Name %s' %name)
 print('*' * 100)
 #------------------------------------------------------------------
+print(type(name))
