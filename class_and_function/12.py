@@ -6,4 +6,21 @@
 #  API needed to create in python.
 
 class Sample:
-    pass
+
+    def __init__(self) -> None:
+        pass
+
+    def orslash(self):
+        pass
+
+    def olslash(self):
+        pass
+
+    def irslash(self):
+        pass
+
+    def ilslash(self):
+        pass
+
+    def mymain(self):
+        pass
