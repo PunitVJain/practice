@@ -11,7 +11,7 @@ class Sample:
         pass
 
     def orslash(self):
-        pass
+        print('Punit Jain')
 
     def olslash(self):
         pass
@@ -23,4 +23,9 @@ class Sample:
         pass
 
     def mymain(self):
-        pass
+        
+        sa = Sample()
+        sa.orslash()
+        
+sam = Sample()
+sam.mymain()
