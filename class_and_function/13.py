@@ -10,10 +10,12 @@ mylist = [0, -7, 1, 5, 2, -4, 3, 0]
 
 print(eqidx(mylist))
 
-def fib(n):
-    a, b = 0, 1
-    while a < n:
-        print(a, end=' ')
-        a, b = b, a+b
+def febio(rt):
+    fv, sv = 0, 1
+    while fv < rt:
+        print(fv, end=' ')
+        fv, sv = sv, fv + sv
     print()
-fib(10)
+
+rt = 5
+febio(rt)
