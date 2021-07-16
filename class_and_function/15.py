@@ -1,4 +1,6 @@
 #  python 
 
-#  connect pythom code wiith java code.
+#  connect pythom code with java code.
+
+# OR write the python code same as that of the JAVA code.
 
