@@ -3,6 +3,8 @@
 mystr = 'My name is Punit Jain'
 
 # O/p = 'A IDNI evolI'
+#  the index of space will be same but the string is reverse.
+
 
 
 def revspace(mystr):
