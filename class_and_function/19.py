@@ -19,7 +19,9 @@ def add_element(mylist1, mylist2):
     return sum_list
 #print(add_element(mylist2, mylist1))
 
-
+if __name__ == '__main__':
+    print(add_element(mylist1, mylist2))
+    #print(__name__)
 
 
 
