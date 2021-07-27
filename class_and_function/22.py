@@ -12,15 +12,21 @@
 class Example:
 
     def initcaps(self, mystr):
+        '''
+        Converts the string in the initcaps.
+        '''
         cap_str =  mystr.capitalize()
         return cap_str
+
+    def upper_str(self, mystr):
+        pass
 
     def main(self):
         ex = Example()
         mystr = input("Enter the string: ")
         print(ex.initcaps(mystr))
 
-        
+
 if __name__ == '__main__':
     exa = Example()
     exa.main()
