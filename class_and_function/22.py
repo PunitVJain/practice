@@ -21,6 +21,10 @@ class Example:
     def upper_str(self, mystr):
         pass
 
+    def split_str(self, mystr):
+        pass
+    
+
     def main(self):
         ex = Example()
         mystr = input("Enter the string: ")
