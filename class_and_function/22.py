@@ -6,3 +6,7 @@
 # mytup = (1, 2, 3, 4, 5, 6, 7, 8, 9) -- > tuple in python. 
 # obool  = True --> boolen value.
 # int & float --> number type.
+#  complex numbers.
+#  FUNCTIONS of the data-types in python.
+# 1. String functions:- 
+# 
