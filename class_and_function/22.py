@@ -9,4 +9,18 @@
 #  complex numbers.
 #  FUNCTIONS of the data-types in python.
 # 1. String functions:- 
-# 
+class Example:
+
+    def initcaps(self, mystr):
+        cap_str =  mystr.capitalize()
+        return cap_str
+
+    def main(self):
+        ex = Example()
+        mystr = input("Enter the string: ")
+        print(ex.initcaps(mystr))
+
+        
+if __name__ == '__main__':
+    exa = Example()
+    exa.main()
