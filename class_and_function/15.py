@@ -6,6 +6,6 @@
 
 # py4j will initiate jvm to access in python code.
 
-from py4j.java_gateway import JavaGateway
+#from py4j.java_gateway import JavaGateway
 
-obj = JavaGateway()
+#obj = JavaGateway()
