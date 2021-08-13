@@ -12,3 +12,6 @@ print(odd)
 
 double  = tuple(map(lambda num: num **2, mylist))
 print(double)
+
+
+#  map & filter 
