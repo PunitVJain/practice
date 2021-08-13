@@ -7,5 +7,8 @@ print(even)
 
 #  syntax of filter is
 #  filter(function, iterables)
-odd = tuple(filter(lambda num: num%2!=0,mylist))
+odd = tuple(filter(lambda num: num%2!=0, mylist))
 print(odd)
+
+double  = tuple(map(lambda num: num **2, mylist))
+print(double)
