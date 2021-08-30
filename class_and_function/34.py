@@ -13,5 +13,5 @@ def fun_sort_list(mylist):
         lt -= 1
     return new_list
 
-mylist = [10, 20, 30, 40, 50, 60, 70, 80]
+mylist = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 print(fun_sort_list(mylist))
