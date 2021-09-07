@@ -9,3 +9,5 @@ db = client.business
 data = {"firstname": "Rakhi", "lastname": "Jain", "mobileno": 7038680983, "city": "Malkapur"}
 
 db.mydata.insert_one(data)
+
+db.mydata.find_one({"firstname": "Punit"})
