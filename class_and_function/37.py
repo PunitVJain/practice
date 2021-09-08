@@ -1,11 +1,6 @@
-#  python developer.
+# List comprehension.
 
-# Write a function to find the longest common prefix 
-# string amongst an array of strings.
-# If there is no common prefix, return an empty string "".
+mylist = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 
-class Solution:
-
-    def __init__(self) -> None:
-        pass
-
+mylist = [iteam for iteam in mylist if iteam % 3 == 0]
+print(mylist)
