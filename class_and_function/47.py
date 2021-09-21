@@ -7,12 +7,18 @@ import datetime
 #mylist =  json.dumps(data)
 class Sample:
     
-    def func_dct(self, data):
+    def add_index_timestamp(self, data):
         ct = datetime.datetime.now()
         for iteam, value in enumerate(data):
             value["index"] = iteam
             value["date_time_stamp"] = ct
         return data
+    
+    def change_key(self, data):
+        pass
+    
+    def read_json_file(self, file):
+        pass
 
 def main():
     data = [{"firstname":"Punit", "lastname":"Jain", "mobileno":"8237914234", "location":"Malkapur"},
@@ -21,7 +27,7 @@ def main():
             {"firstname":"Shravani", "lastname":"Jain", "mobileno":"9768777787", "location":"Banglore"}]
 
     sa_one = Sample()
-    print(sa_one.func_dct(data))
+    print(sa_one.add_index_timestamp(data))
 
 if __name__ == "__main__":
     main()
