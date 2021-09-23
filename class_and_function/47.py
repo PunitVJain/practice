@@ -1,11 +1,16 @@
 # python to read json data
 
 import datetime
-
+import json
 
 
 #mylist =  json.dumps(data)
 class Sample:
+
+    def __init__(self, file) -> None:
+
+        self.file = file
+        
     
     def add_index_timestamp(self, data):
         ct = datetime.datetime.now()
@@ -18,6 +23,9 @@ class Sample:
         pass
     
     def read_json_file(self, file):
+        with open(file, "rW") as file:
+            file = json.loads(file.read())
+
         pass
 
 def main():
