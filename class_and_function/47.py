@@ -14,19 +14,23 @@ class Sample:
             value["date_time_stamp"] = ct
         return data
     
-    def change_key(self, data):
-        pass
-    
+    def change_key(self, data, ckey, mkey):
+        data = json.dumps(data)
+        data = data.replace(ckey, mkey)           
+        return json.loads(data)
+                
     def read_json_file(self, file):
         with open(file, 'r+') as file:
             file = json.loads(file.read())
             return file
 
 def main():
-    data = "/media/putwind/Card1/Movies/Desktop/Python Practic Programmes/Python_Study/practice/class_and_function/file.json"
-
     sa_one = Sample()
-    print(sa_one.add_index_timestamp(sa_one.read_json_file(data)))
+    data = "/media/putwind/Card1/Movies/Desktop/Python Practic Programmes/Python_Study/practice/class_and_function/file.json"
+    
+    print("first requirement---->", sa_one.read_json_file(data))
+    print("Second recuirement--->", sa_one.add_index_timestamp(sa_one.read_json_file(data)))
+    print("Third Requirement--->", sa_one.change_key(sa_one.read_json_file(data),"location", "place"))
 
 if __name__ == "__main__":
     main()
