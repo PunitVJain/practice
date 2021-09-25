@@ -17,7 +17,7 @@ class Sample:
         for iteam, value in enumerate(data):
             value["index"] = iteam
             value["date_time_stamp"] = ct
-        return self.file
+        return data
     
     def change_key(self, data, ckey, mkey):
         '''changes the key names in the json'''
@@ -35,7 +35,7 @@ def main():
     '''main method to start the execution.'''
     data = "/media/putwind/Card1/Movies/Desktop/Python Practic Programmes/Python_Study/practice/class_and_function/file.json"
     sa_one = Sample(data) 
-    print("first requirement---->", sa_one.read_json_file())
+    print("First requirement---->", sa_one.read_json_file())
     print("Second recuirement--->", sa_one.add_index_timestamp(sa_one.read_json_file()))
     print("Third Requirement--->", sa_one.change_key(sa_one.read_json_file(),"firstname", "fname"))
 
