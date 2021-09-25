@@ -37,7 +37,7 @@ def main():
     sa_one = Sample(data) 
     print("first requirement---->", sa_one.read_json_file())
     print("Second recuirement--->", sa_one.add_index_timestamp(sa_one.read_json_file()))
-    print("Third Requirement--->", sa_one.change_key(sa_one.read_json_file(),"location", "place"))
+    print("Third Requirement--->", sa_one.change_key(sa_one.read_json_file(),"firstname", "fname"))
 
 if __name__ == "__main__":
     main()
