@@ -8,9 +8,9 @@ def login_page():
     _json = request.json
     username = _json["username"]
     password = _json["password"]
-    return  {"username": username, "password": password}
+    return  {"password": password, "username": username}
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port= 5000)
+    app.run(debug=True, port= 3300)
 
