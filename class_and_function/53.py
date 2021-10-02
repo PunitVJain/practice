@@ -34,7 +34,6 @@ class Example:
                     return True
                 elif num not in loop_value:
                     loop_value.add(num)
-                    continue
                 else:
                     return False
 
