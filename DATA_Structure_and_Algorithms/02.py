@@ -12,6 +12,8 @@ class Node:
     
 class Tree:
 
+    treeinorderTraversal = []
+    treepreorderTraversal = []
     def createnode(self, data):
         return Node(data)
     
@@ -27,14 +29,16 @@ class Tree:
     def traversal_inorder(self, node):
         if node is not None:
             self.traversal_inorder(node.left)
-            print(node.data, end='')
+            self.treeinorderTraversal.append(node.data)
             self.traversal_inorder(node.right)
+            return self.treeinorderTraversal
     
     def traversal_preorder(self, node):
         if node is not None:
-            print(node.data, end='')
-            self.traversal_inorder(node.left)
-            self.traversal_inorder(node.right)
+            self.treepreorderTraversal.append(node.data)
+            self.traversal_preorder(node.left)
+            self.traversal_preorder(node.right)
+            return self.treepreorderTraversal
         
 
     
@@ -44,10 +48,9 @@ mylist = [5, 2, 3, 4, 5, 8, 3, 7, 8, 9, 10]
 root = tree.createnode(mylist[0])
 for iteam in range(1, len(mylist)):
     tree.insert(root, mylist[iteam])
-print("Inorder---->")
-tree.traversal_inorder(root)
-print("Preorder---->")
-tree.traversal_preorder(root)
-print()
+print("Inorder---->",tree.traversal_inorder(root))
+print("Preorder---->",tree.traversal_preorder(root))
+
+
     
 
