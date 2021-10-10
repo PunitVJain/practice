@@ -29,6 +29,12 @@ class Tree:
             self.traversal_inorder(node.left)
             print(node.data)
             self.traversal_inorder(node.right)
+    
+    def traversal_preorder(self, node):
+        if node is not None:
+            print(node.data)
+            self.traversal_inorder(node.left)
+            self.traversal_inorder(node.right)
         
 
     
@@ -40,5 +46,7 @@ for iteam in range(1, len(mylist)):
     tree.insert(root, mylist[iteam])
 print("Inorder---->")
 tree.traversal_inorder(root)
+print("Preorder---->")
+tree.traversal_preorder(root)
     
 
