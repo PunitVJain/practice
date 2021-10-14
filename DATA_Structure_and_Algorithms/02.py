@@ -1,5 +1,5 @@
 #  python is the best to work for Data structure & algorithms
-# implementing tree data structure in python.
+#  implementing tree data structure in python.
 #  initially needed to create the node data type
 
 
