@@ -2,10 +2,12 @@
 
 # how python works.
 
-class Node:
+class linklistnode:
     
-    def __init__(self, value) -> None:
-        self.left = None
+    def __init__(self, value, nextnode=None) -> None:
         self.data = value
-        self.right = None
+        self.nextnode = nextnode
+        
+
+
 
