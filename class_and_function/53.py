@@ -46,5 +46,5 @@ if __name__=="__main__":
         num = int(input("Enter the Number: "))
         print(ex.isHappy(num))
     except:
-        print("The I/O is not integer.")
+        print("The I/P is not integer.")
     
