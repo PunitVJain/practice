@@ -42,5 +42,9 @@ class Example:
 
 if __name__=="__main__":
     ex = Example()
-    num = int(input("Enter the Number: "))
-    print(ex.isHappy(num))
+    try:
+        num = int(input("Enter the Number: "))
+        print(ex.isHappy(num))
+    except:
+        print("The I/O is not integer.")
+    
