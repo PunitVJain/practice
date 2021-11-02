@@ -9,3 +9,7 @@ mydict['start'].append('Maldives')
 mydict['Name'] = "Rakhi Jain"
 
 print(mydict)
+
+# python practice 
+print('Python is my life for sometime', end='\n')
+#  python for learn python the hard way.
