@@ -18,3 +18,16 @@ def afun(mylist, rt):
     return mylist
 
 print(afun(mylist, rt))
+
+# learn python the hard way.
+
+#  print() --> Printing the things.
+
+# 
+print("Punit Jain")
+print('India')
+name = "Punit Jain"
+print(f'Love to be Programmer {name}')
+print("Punit Jain", name)
+print('Malkapur' +name)
+print("Punit Jain")
