@@ -12,3 +12,4 @@ class Sample(object):
 #  python follows inheritance.
 #  when the super class is inherited in call
 #  in the consructor by default arguments are inherited.
+
