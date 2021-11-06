@@ -1,12 +1,25 @@
 #  start with classes in python.
-
+#  this is the bad way for the finding the addition of two numbers is even or not,
+#  but to understand the concept of class method, can use this structure.
 class Sample:
+    @classmethod
+    # if this method is not static method then it will give an error as one argument missing.
+    # as the method is called with the class name
+    def add(self, first_number:int, second_number:int):
+        return first_number + second_number
+#  python 
 
-    def __init__(self):
-        pass
+class Example(Sample):
+    @classmethod
+    # if this method is not static method then it will give an error as one argument missing.
+    # as the method is called with the class name
+    def check_addition_iseven(self,first_number:int,second_number:int):
+        if Sample.add(first_number,second_number) % 2 == 0:
+            return True
+        return False
 
-    def add(self):
-        pass
+
+print(Example.check_addition_iseven(2,3))
 
 
 
