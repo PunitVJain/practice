@@ -1,5 +1,5 @@
 #  decorators in python
-# needed to create decorator as before name it must return 'My name is'.
+#  needed to create decorator as before name it must return 'My name is'.
 #  example of decorators.
 
 def decfun(name):
