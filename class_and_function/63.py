@@ -5,5 +5,6 @@ class Sample(object):
         pass
 
 if __name__ == "__main__":
-    sa =  Sample
+    sa =  Sample()
+    
     
