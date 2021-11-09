@@ -5,3 +5,7 @@ class Sample:
         pass
     def add(self):
         return 'Punit Jain'
+
+
+class Example(Sample):
+    pass
