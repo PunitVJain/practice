@@ -9,3 +9,7 @@ class Sample:
 
 class Example(Sample):
     pass
+
+#  python from udemy.
+
+#  python for barklays
