@@ -14,13 +14,23 @@ def login_page():
     _password = _json["password"]
     return  {"password": _password, "username": _username}
 
+data = {"name":"Punit Jain"}
 
 class Sample(Resource):
 
     def get(self):
         return "Hello World!"
 
+class SecondApi(Resource):
+
+    def post(self, data):
+        name = request.json["name"]
+        if name in data.keys():
+            return({"My Name is": name})
+        return({"My Name is not in data"})
+
 api.add_resource(Sample, "/api/helloworld")
+api.add_resource(SecondApi, "/api/test")
 
 
 if __name__ == "__main__":
