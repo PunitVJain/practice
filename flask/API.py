@@ -14,7 +14,7 @@ def login_page():
     _password = _json["password"]
     return  {"password": _password, "username": _username}
 
-data = {"name":"Punit Jain"}
+data = {"name":["Punit Jain", "Vinod Jain", "Ram Jain"]}
 
 class Sample(Resource):
 
@@ -26,7 +26,7 @@ class SecondApi(Resource):
     def post(self):
         name = request.get_json()
         print(name)
-        if name["name"] == data["name"]:
+        if name["name"] in data["name"]:
             return jsonify({"data is there ":name})
         return jsonify({"data is not there ":name})
 
