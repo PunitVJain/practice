@@ -1,5 +1,5 @@
 
-from flask import Flask, request
+from flask import Flask, json, request, jsonify
 from flask_restful import Api, Resource
 
 
@@ -23,11 +23,12 @@ class Sample(Resource):
 
 class SecondApi(Resource):
 
-    def post(self, data):
-        name = request.json["name"]
-        if name in data.keys():
-            return({"My Name is": name})
-        return({"My Name is not in data"})
+    def post(self):
+        name = request.get_json()
+        print(name)
+        if name["name"] == data["name"]:
+            return jsonify({"data is there ":name})
+        return jsonify({"data is not there ":name})
 
 api.add_resource(Sample, "/api/helloworld")
 api.add_resource(SecondApi, "/api/test")
