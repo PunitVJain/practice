@@ -13,3 +13,8 @@ class Example(Sample):
 #  python from udemy.
 
 #  python for barklays
+
+data  = {"name": "Punit Jain", "MobNo":"8237914234"}
+
+if "name" in data.keys():
+    print(True)
