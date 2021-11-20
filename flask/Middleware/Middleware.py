@@ -1,4 +1,6 @@
 # class for the data manupulation.
 
 class Middleware:
-    pass
+
+    def name(self):
+        return "Punit Jain"
