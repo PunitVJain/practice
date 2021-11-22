@@ -1,5 +1,5 @@
 #  python for Punit Jain.
-from numpy.random.mtrand import sample
+
 
 
 class Sample(object):

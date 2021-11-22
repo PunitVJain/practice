@@ -26,7 +26,6 @@ class SecondApi(Resource):
 
     def post(self):
         name = request.get_json()
-        print(name)
         if name["name"] in data["name"]:
             return jsonify({"data is there ":name})
         return jsonify({"data is not there ":name})
