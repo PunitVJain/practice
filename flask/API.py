@@ -25,10 +25,10 @@ class Sample(Resource):
 class SecondApi(Resource):
 
     def post(self):
-        name = request.get_json()
-        if name["name"] in data["name"]:
-            return jsonify({"data is there ":name})
-        return jsonify({"data is not there ":name})
+        data = request.get_json()
+        if data["name"] in data["name"]:
+            return jsonify({"data is there ":data})
+        return jsonify({"data is not there ":data})
 
 api.add_resource(Sample, "/api/helloworld")
 api.add_resource(SecondApi, "/api/test")
