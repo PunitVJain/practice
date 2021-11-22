@@ -1,9 +1,9 @@
 # python link list.
 
 class LinkListNode:
-    def __init__(self, data, nextnode = None):
+    def __init__(self, data):
         self.data= data 
-        self.nextnode = nextnode
+        self.nextnode = None
 
 class LinkList:
 
