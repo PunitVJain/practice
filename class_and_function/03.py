@@ -35,4 +35,33 @@ class Solution:
         
   
 Sol = Solution()
-print(Sol.rev_num(321))
+print(Sol.reverse(321))
+
+# --------------------------------------------------------------------------------
+
+# stack data structure
+
+class Stack(object):
+
+    def __init__(self):
+        self.iteam = []
+    
+    def push(self, *args, **kwargs):
+        self.iteam.append(args)
+        return None
+    
+    def size(self):
+        return len(self.iteam)
+    
+
+
+
+Stack =  Stack()
+print(Stack.push(1, 2, 3, 4))
+print(Stack.size())
+print(Stack.push(5))
+print(Stack.size())
+print(Stack.push(7))
+print(Stack.size())
+print(Stack)
+        
