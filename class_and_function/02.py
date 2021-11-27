@@ -31,3 +31,41 @@ print(f'Love to be Programmer {name}')
 print("Punit Jain", name)
 print('Malkapur' +name)
 print("Punit Jain")
+
+# learn to create link list
+
+class Node:
+
+    def __init__(self, data= 0, nextnode= None) -> None:
+        """
+        As in link list nodes 
+        """
+        self.data = data
+        self.nextnode = nextnode
+
+class LinkList:
+
+    def __init__(self) -> None:
+        self.head = None
+
+    def print_link_list(self):
+        temp = self.head
+        while temp:
+            print(temp.data, "--> ", end="")
+            temp = temp.nextnode
+
+
+
+link_list = LinkList()
+link_list.head = Node(1)
+secondnode = Node(4)
+thirdnode = Node(7)
+
+
+link_list.head.nextnode = secondnode
+secondnode.nextnode = thirdnode
+
+
+link_list.print_link_list()
+
+ 
