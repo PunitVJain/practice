@@ -17,6 +17,10 @@ print('Python is my life for sometime', end='\n')
 # Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
 class Solution:
+    """
+    Wromg Solution
+    Needed to check the logic once again.
+    """
     def reverse(self, x: int) -> int:
         num = list(str(x))
         if x in range(-2**31,2**31 - 1):
