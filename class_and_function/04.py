@@ -19,10 +19,14 @@ class Example(Sample):
         return False
 
 
-print(Example.check_addition_iseven(2,3))
+#print(Example.check_addition_iseven(2,3))
 # =============================================================================
 
-#  
+mylist = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+even_num_list = list(filter(lambda ele: ele % 2 == 0, mylist))
+print(even_num_list)
+
 
 
 
