@@ -10,3 +10,9 @@ def cdict(mylist1, mylist2):
     return mydict
 
 print(cdict(mylist1, mylist2))
+# ==================================================================
+#  covert lists into dictionary.
+mylist = [1, 0, 0, 1, 1, 0, 1]
+mylist2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+print(dict(zip(mylist2, mylist)))
