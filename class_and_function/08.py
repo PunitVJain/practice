@@ -12,3 +12,7 @@ print('Name %s' %name)
 print('*' * 100)
 #------------------------------------------------------------------
 print(type(name))
+
+mylst  = [(10,20,30), (20, 30, 40),(50, 60, 90)]
+
+print(list(filter(lambda ele: ele if ele[1]< 60 and ele[1] > 30 else None, mylst)))
