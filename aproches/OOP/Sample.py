@@ -27,7 +27,7 @@ class GerExample(Example, ExampleTwo):
         super().__init__(name, mobno)
     
     def name_and_number(self):
-        return super().myname()
+        return super().myname(), super().mobno
 
 gx = GerExample("Punit Jain", 9999999999)
 print(gx.name_and_number())
