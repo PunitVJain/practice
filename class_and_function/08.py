@@ -22,6 +22,10 @@ print(list(filter(lambda ele: ele if ele[1]< 60 and ele[1] > 20 else None, mylst
 # dictionary comprehension
 from math import pow
 nums = [20, 23, 24, 25, 26, 18, 19]
+def iseven(num:int):
+	if num % 2 == 0:
+		return True
+	return False
 
-mydict = {ele: pow(ele,2) for ele in nums}
+mydict = {ele: pow(ele,2) for ele in nums if iseven(ele)}
 print(mydict)
