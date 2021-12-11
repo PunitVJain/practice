@@ -15,3 +15,10 @@ class Sample(object):
 if __name__ == "__main__":
     sa = Sample("Punit","Jain")
     print(sa.location())
+
+# ---------------------------------------------------------------------------
+
+
+
+class SampleThree:
+    pass

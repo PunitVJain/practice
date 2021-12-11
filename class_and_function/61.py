@@ -38,7 +38,7 @@ class SampleTwo(SampleOne):
     
 sam_two = SampleTwo("Punit", "Jain","9876543298") 
 print(sam_two.full_name())#  inharited super class method 
-print(sam_two.first_variable) #  class varibale accessed by the child class.
+print(sam_two.first_variable, end = '') #  class varibale accessed by the child class.
 
 
 
