@@ -2,7 +2,6 @@
 
 
 
-from importlib_metadata import re
 
 
 def decore(func):
