@@ -21,4 +21,9 @@ if __name__ == "__main__":
 
 
 class SampleThree:
-    pass
+    
+    def dirname(self):
+        return __annotations__
+
+sam =  SampleThree()
+print(sam.dirname())
