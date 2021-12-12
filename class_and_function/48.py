@@ -5,3 +5,16 @@ def removeElement(nums, val) -> int:
     return number_of_elements_replaced
 
 print(removeElement([3,2,2,3], 3))
+
+# =====================================================================================
+
+
+def solution(S):
+    # write your code in Python 3.6
+    mylist = list(S)
+    mylist = sorted(list(map(int, mylist)))[-2:]
+    mylist = list(map(str, mylist))
+    mylist = ''.join(mylist)
+    return int(mylist)
+    
+print(solution('505552'))
