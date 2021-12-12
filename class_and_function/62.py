@@ -15,3 +15,15 @@ class Sample(object):
 if __name__ == "__main__":
     sa = Sample("Punit","Jain")
     print(sa.location())
+
+# ---------------------------------------------------------------------------
+
+
+
+class SampleThree:
+    
+    def dirname(self):
+        return __annotations__
+
+sam =  SampleThree()
+print(sam.dirname())
