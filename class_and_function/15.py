@@ -11,3 +11,18 @@
 #obj = JavaGateway()
 
 
+class Sample:
+
+    myself = "Malkapur"
+
+    def __init__(self, name) -> None:
+        self.name = name
+    
+
+class Example(Sample):
+
+    def __init__(self, name) -> None:
+        super().__init__(name)
+
+ex = Example("Maharashtra")
+print(ex.myself)        
