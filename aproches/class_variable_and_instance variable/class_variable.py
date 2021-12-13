@@ -5,11 +5,9 @@ class SampleOne:
     num = 10 
     
     def __init__(self, first_name, last_name) -> None:
-        if SampleOne.num <=16:
-            self.first_name = first_name # instance variable in python
-            self.last_name = last_name # instance variable in python
-        SampleOne.num += 1
-    
+        self.first_name = first_name # instance variable in python
+        self.last_name = last_name # instance variable in python
+        
     def full_name(self):
         return self.first_name + " " + self.last_name, self.num
 
