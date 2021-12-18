@@ -17,6 +17,7 @@ class SampleOne:
 sam = SampleOne()
 sam1 = SampleOne()
 sam2 = SampleOne()
+
 print(sam.__dict__)
 print(sam1.__dict__)
 print(sam2.__dict__)
