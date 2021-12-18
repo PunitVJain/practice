@@ -10,11 +10,14 @@ class FirstSample:
         """scrap data
         """
         self.name = name
+        
 
     #  self is the instance of the class in python 
     #  which bind the arguments with instalce variable.
 
 
 FS =  FirstSample("Punit")
+FS2 = FirstSample("Jain")
 print(FS)
+print(FS2)
 
