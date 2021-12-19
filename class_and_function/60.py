@@ -1,5 +1,25 @@
 # leet code questions
-# Given a string n representing an integer, 
-# return the closest integer (not including itself), 
-# which is a palindrome. If there is a tie, return the smaller one.
-# The closest is defined as the absolute difference minimized between two integers.
+# Febonici series in generator.
+
+# febo
+
+
+
+
+def febo(limit):
+    val, ele = 0, 1
+    while val < limit:
+        yield val
+        val, ele = ele, val + ele
+
+value = febo(10)
+
+print(value.__next__())
+print(value.__next__())
+print(value.__next__())
+print(value.__next__())
+print(value.__next__())
+print(value.__next__())
+
+
+
