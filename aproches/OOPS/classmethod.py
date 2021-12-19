@@ -14,3 +14,9 @@ class Example:
 ex = Example(10, 20)
 
 print(Example.cmethod()) #  class method takes class as first param in the place of self.
+# it takes first argument as class
+# it is bound with the class , it can change the state of the class
+# it will chnage the state of each instance.
+#  can be accessed by class & instances.
+# -===========================================================================
+# static metho
