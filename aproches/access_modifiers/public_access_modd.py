@@ -28,7 +28,7 @@ class SampleTomorrow(SampleToday):
         super().__init__(first_name, last_name, mobno, address)
     
 
-st2  = SampleTomorrow("Punit", "Jain", "8237914234", "wakad, Pune")
+st2  = SampleTomorrow("Punit", "Jain", "9876543287", "wakad, Pune")
 print(st2.full_name())
 print(st2._mobile_no())
 #print(st2.__complete_address()) # as the __complete_address() is not accessible this will through an error
