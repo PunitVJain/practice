@@ -13,3 +13,7 @@ class Sample(object):
         return "Punit Jain"
 Sa = Sample()
 print(Sa.my_name())
+
+# ========================================================
+class MyExample:
+    pass
