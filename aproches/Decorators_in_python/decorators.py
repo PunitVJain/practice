@@ -38,3 +38,13 @@ print(nums())
 # ================================================================================
 
 
+def decorator_func(func):
+    def wrapper(*args, **kwargs):
+        return  func() * 2
+    return wrapper
+
+@decorator_func
+def name_func():
+    return "Punit "
+
+print(name_func())

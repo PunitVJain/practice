@@ -9,7 +9,7 @@ def rom_to_num(rom:str):
     roman_nums = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000}
     result = 0
     for iteam in range(len(rom)):
-        if iteam + 1 != len(rom) and roman_nums[rom[iteam]]< roman_nums[rom[iteam+1]]:
+        if iteam + 1 != len(rom) and roman_nums.get(rom[iteam])< roman_nums.get(rom[iteam+1]):
             result -= roman_nums[rom[iteam]]
         else:
             result += roman_nums[rom[iteam]]
