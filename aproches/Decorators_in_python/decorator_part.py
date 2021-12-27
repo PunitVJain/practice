@@ -25,3 +25,16 @@ def numbs():
 
 
 print(numbs())
+
+# ===============================================================================
+
+def lessthanfifty(func):
+    def wrapper():
+        return list(filter(lambda ele: ele if ele > 50 else None, func()))
+    return wrapper
+
+@lessthanfifty
+def valuesfunc():
+    return [ele for ele in range(1, 101)]
+
+print(valuesfunc())
