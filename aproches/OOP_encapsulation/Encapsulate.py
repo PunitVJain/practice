@@ -1,6 +1,9 @@
 # Encapsulation
 
-class Encapsulate:
+
+class OneExample:
+
+    _num = 0
 
     def __init__(self) -> None:
-        pass
+        self._

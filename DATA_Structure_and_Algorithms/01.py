@@ -6,3 +6,6 @@
 # Methods with Stack?
 # Stack imple
 # 
+
+
+# stack can be used to store the elements as,

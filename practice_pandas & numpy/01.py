@@ -1,6 +1,8 @@
 # pandas
 import pandas as pd
 
-print(pd.read_csv("/home/putwind/Desktop/MOCK_DATA.csv"))
+data = {"first_name": ["Punit", "Ram"], "last_name": ["Jain", "Charan"], "mobile_no": ["9876543298", "8967452389"]}
 
-pd.Series()
+df = pd.DataFrame(data)
+print(df)
+

@@ -15,8 +15,19 @@ class Apple(object):
         second_num = int(input("Enter the second value: "))
         print(f"The Addition of the two numbes {first_num} & {second_num} is:",app_one.add_two_numbers(first_num, second_num))
 
-if __name__ == "__main__":
-    app_two = Apple()
-    app_two.main()
+#if __name__ == "__main__":
+    #app_two = Apple()
+    #app_two.main()
+#  ================================================================================
+#  MRO in Python.
+#  Method Resolution Order
+#  
 
+class SampleMade(object):
 
+    def __init__(self, name) -> None:
+        super().__init__()
+        self.name = name
+    
+sm = SampleMade("name")
+print(sm.__dict__)
