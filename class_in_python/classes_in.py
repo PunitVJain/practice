@@ -6,6 +6,7 @@ class SampleOne:
         return f"Instance of class {cls.__name__}"
 
     
+# to modify the instance return by __repr__ in python.
 
 
 sam = SampleOne()
