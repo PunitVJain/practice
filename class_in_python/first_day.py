@@ -10,3 +10,11 @@ class SampleFirst:
     
 sf = SampleFirst()
 print(sf.__hash__())
+
+class SampleSecond:
+
+    def __init__(self) -> None:
+        pass
+
+    def __repr__(self) -> str:
+        pass
