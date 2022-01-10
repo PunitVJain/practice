@@ -37,4 +37,14 @@ class SampleThree:
         return "Mumbai"
 
 class Solution(SampleOne, SampleTwo, SampleThree):
-    pass
+    
+    def __init__(self, mname) -> None:
+        super(SampleTwo, self).__init__(mname)
+
+    def loc(self):
+        print(self.mname)
+        return super(SampleTwo, self).loc()
+
+if __name__ == "__main__":
+    sol =  Solution("Vinod")
+    print(sol.loc())    
