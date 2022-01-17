@@ -32,3 +32,7 @@ class SampleFour(SampleThree):
 
 sam_four = SampleFour("Punit", "Jain")
 print(sam_four.value_one, end="")
+
+class ExampleOne():
+    def __init__(self) -> None:
+        pass
