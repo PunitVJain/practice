@@ -1,7 +1,6 @@
 # python module
 
 import requests
-from requests.api import post
 
 url = "https://www.google.com/"
 
