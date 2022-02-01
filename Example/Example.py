@@ -43,3 +43,5 @@ class SampleSolutionAll(SampleSolution, SampleSolutionOne, SampleSolutionTwo):
         super(SampleSolutionOne).__init__()
 ssa = SampleSolutionAll()
 print(super(SampleSolutionOne, ssa).name_add())
+
+#  trying to understand the python MRO
