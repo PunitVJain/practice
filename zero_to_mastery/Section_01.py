@@ -1,0 +1,3 @@
+#  python.
+class Sample:
+    pass
