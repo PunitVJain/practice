@@ -8,7 +8,7 @@ def func(val):
         result = 0
     return result
 
-print(func(6))
+#print(func(6))
 
 
 # febonice series in python with recurretion.
@@ -22,3 +22,10 @@ def febo(num):
 
 #  factorial in python 
 
+def fact(num):
+    if num == 1:
+        return num
+    else:
+        return num * fact(num-1)
+    
+print(fact(4))
