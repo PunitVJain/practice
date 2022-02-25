@@ -16,5 +16,16 @@ class SampleOne(Sample):
         print(Sample().name())
         return "In SampleOne Method is name."
 
-so = SampleOne()
-print(so.name())
+#so = SampleOne()
+#print(so.name())
+
+
+
+class SampleTwo(Sample):
+
+    def __init__(self):
+        super().__init__()
+
+
+st = SampleTwo()
+print(Sample.name(st))
