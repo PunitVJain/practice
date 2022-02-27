@@ -29,3 +29,15 @@ def fact(num):
         return num * fact(num-1)
     
 print(fact(4))
+
+# ------------------------------------
+# Recurresion involves calling  the function inside the function 
+# with the base condition
+
+def myfunc(item):
+    # recursive function.
+    if item <=0:
+        #  base condition.
+        return 1
+        # function calling itself in function.
+    return item + myfunc(item-1)
