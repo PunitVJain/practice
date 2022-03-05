@@ -36,3 +36,29 @@ ll.print_link_list()
 #  what is recurretion in python?
 # The function which calls itself is 
 
+# ------------------------------------------------------------
+
+# Python for inheritance
+
+
+class SampleOne:
+
+    def full_name(self):
+        return "Punit Jain."
+
+class SampleTwo:
+
+    def __init__(self, first_name, last_name) -> None:
+        self.first_name = first_name
+        self.last_name = last_name
+    
+    def full_name(self):
+        return self.first_name + ' ' + self.last_name
+    
+
+class Sample(SampleTwo):
+
+    pass
+
+sam = Sample('Punit', 'Jain')
+print(SampleTwo.full_name(sam))
