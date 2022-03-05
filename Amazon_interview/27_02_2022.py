@@ -25,3 +25,9 @@ class Example(Second_Example):
 ex = Example('Punit', 'Jain')
 print(First_Example.full_name(ex))   
 print(Second_Example.full_name(ex))
+#-------------------------------------------------
+
+#  DFS & BFS graph traversal methods.
+
+
+
