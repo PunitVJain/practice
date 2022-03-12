@@ -1,3 +1,18 @@
-#  python.
+#  Python with me.
+
+
 class Sample:
+
+    __count_no = 0
+    _id = 1234
+
+    def __init__(self, first_name, last_name) -> None:
+        self.first_name = first_name
+        self.last_name = last_name
+    
+class Example:
+
     pass
+
+
+
