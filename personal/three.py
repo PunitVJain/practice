@@ -1,10 +1,6 @@
 #  python with Punit Jain
 #  find the second largest number from the list in python
 
-
-
-
-
 class SecondLargest:
 
     def __init__(self, lst:list) -> None:
@@ -15,8 +11,11 @@ class SecondLargest:
         return self._lst
     
     @lst.setter
-    def lst(self):
-        pass
+    def lst(self, lst):
+        for ele in lst:
+            if type(ele) != int:
+                raise "The list elements are not valid."
+        self._lst = lst
 
     
     def __max_num(self):
