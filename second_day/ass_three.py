@@ -24,5 +24,7 @@ class Cube(object):
     def __repr__(self) -> str:
         return "Instance of class 'Cube'."
     
-    
+if __name__ == "__main__":
+    cub = Cube(10)
+    print(cub)
     
