@@ -22,5 +22,6 @@ class SampleTwo(SampleOne):
 if __name__ == "__main__":
     sam = SampleTwo("Punit", "Vinod", "Jain")
     print(sam.full_name())
+    print(SampleOne.full_name(sam))
 
 # single inheritance in python with super() & instance of the class.
