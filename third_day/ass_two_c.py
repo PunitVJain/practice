@@ -34,5 +34,12 @@ class SampleThree:
 
     def full_mobile_no(self):
         return self.mobile_no
+
+class Sample(SampleOne, SampleTwo, SampleThree):
+    def __init__(self, first_name, last_name) -> None:
+        super().__init__(first_name, last_name)
+if __name__== "__main__":
+    sam = Sample("Punit", "Jain", "Malkapur", 8237914234)
+    print(sam)
     
 
